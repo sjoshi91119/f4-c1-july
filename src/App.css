@@ -1,10 +1,20 @@
-main-image {
+body {
+  background-color: silver;
+  display: flex;
+}
+.container1 {
+  background-color: rgb(26, 218, 218);
+  width: 70vw;
+  height: 80vh;
+  border-radius: 0 5% 5% 0;
   position: absolute;
-  left: 1.61%;
-  right: 58.37%;
-  top: 31.52%;
-  bottom: -3.23%;
-
-  background: url(Abstraction.png);
-  transform: rotate(-7.15deg);
+  left: 15%;
+  top: 10%;
+}
+.form-box {
+  background-color: white;
+  width: 60%;
+  height: 100%;
+  float: right;
+  border-radius: 5%;
 }
