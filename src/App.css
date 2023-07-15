@@ -3,7 +3,7 @@ body {
   display: flex;
 }
 .container1 {
-  background-color: rgb(26, 218, 218);
+  background-color: rgb(141, 240, 240);
   width: 70vw;
   height: 80vh;
   border-radius: 0 5% 5% 0;
@@ -13,11 +13,22 @@ body {
 }
 .form-box {
   background-color: white;
-  width: 60%;
+  width: 65%;
   height: 100%;
   float: right;
   border-radius: 5%;
 }
+form {
+  width: 70%;
+  margin: 5% 12%;
+  border: 1px solid;
+  padding: 10px;
+}
 img {
+  position: absolute;
+  left: 5%;
+  top: 20%;
   z-index: 1;
+  height: 80%;
+  width: 40%;
 }
