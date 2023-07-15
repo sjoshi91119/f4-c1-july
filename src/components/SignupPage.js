@@ -11,10 +11,10 @@ function SignupPage() {
           <form>
             <h1>Create Account</h1>
             <button className="btn1">
-              <img src={google} alt="google's Pic" /> Signup With Google
+              <img src={Google} alt="google's Pic" /> Signup With Google
             </button>
             <button className="btn1">
-              <img src={fb} alt="fb's Pic" /> Signup With Facebook
+              <img src={Facebook} alt="fb's Pic" /> Signup With Facebook
             </button>
           </form>
         </div>
