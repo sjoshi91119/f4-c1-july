@@ -1,15 +1,17 @@
 body {
-  background-color: silver;
+  background-color: rgb(56, 56, 56);
   display: flex;
+  font-family: sans-serif;
 }
 .container1 {
-  background-color: rgb(141, 240, 240);
+  background-color: rgb(135, 228, 228);
   width: 70vw;
   height: 80vh;
   border-radius: 0 5% 5% 0;
   position: absolute;
   left: 15%;
   top: 10%;
+  box-shadow: 0px 0px 2px 2px rgb(51, 51, 51);
 }
 .form-box {
   background-color: white;
@@ -17,18 +19,133 @@ body {
   height: 100%;
   float: right;
   border-radius: 5%;
+  box-shadow: 0px 0px 5px 1px rgb(85, 84, 84);
 }
 form {
   width: 70%;
-  margin: 5% 12%;
-  border: 1px solid;
+  margin: 0% 12%;
   padding: 10px;
 }
-img {
+#figure {
   position: absolute;
   left: 5%;
   top: 20%;
   z-index: 1;
   height: 80%;
   width: 40%;
+  transition-duration: 8s;
+}
+#figure:hover {
+  transform: rotate(-5deg) translateY(-80px) translateX(-10px);
+  transition-duration: 2s;
+}
+h1 {
+  margin-left: 5%;
+}
+#alt-login-btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4px 20px;
+  margin-bottom: 20px;
+  border: 1px solid silver;
+  border-radius: 20px;
+  background-color: white;
+}
+button:hover {
+  box-shadow: 0px 0px 5px 1px;
+  transition-duration: 1s;
+}
+button img {
+  width: 30px;
+  padding: 0px 5px;
+}
+h5 {
+  text-align: center;
+  color: grey;
+  font-size: 25px;
+  margin: 3%;
+}
+.fields {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: silver;
+}
+.fields input {
+  color: grey;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid silver;
+  width: 90%;
+  align-items: center;
+  margin: 3.5% 5%;
+  font-size: 18px;
+}
+input:focus {
+  border-bottom: 2px solid rgb(14, 216, 216);
+  font-size: 19px;
+}
+#submit-btn {
+  background-color: rgb(95, 214, 214);
+  width: 92%;
+  padding: 15px 10px;
+  margin-left: 5%;
+  margin-top: 3%;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 1px 5px 2px teal;
+}
+#submit-btn:focus {
+  box-shadow: inset 0px 0px 3px 1px teal;
+  font-size: 18px;
+}
+#error-msg {
+  color: red;
+  font-size: 16px;
+  width: 90%;
+  margin-left: 10%;
+}
+#hide {
+  width: 15px;
+}
+/* other styles */
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 230px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.error-text {
+  color: red;
+  font-size: larger;
+}
+
+.success-text {
+  text-align: center;
+  color: green;
+  font-size: larger;
+}
+h4 {
+  margin-left: 40px;
+}
+#scnd {
+  font-size: 20px;
+  top: 65%;
+  left: 85%;
+}
+#fst {
+  font-size: 20px;
+  top: 55%;
+  left: 85%;
 }
